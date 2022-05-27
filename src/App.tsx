@@ -1,11 +1,6 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Playground } from "./component/Playground";
-import { FormButton } from "./component/button/FormButton";
-import { Setting } from "./component/setting";
-import ReactAudioPlayer from "react-audio-player";
 import { BoardGame } from "./component/Board";
 
 function App() {
@@ -18,7 +13,10 @@ function App() {
   }, []);
 
   return (
-    <BoardGame />
+    <>
+      <BoardGame />
+    </>
+
     // <Home>
     //   <BrowserRouter>
     //     <ColorMode>
